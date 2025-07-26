@@ -1,0 +1,30 @@
+# Archivos de clases compiladas de Java
+*.class
+
+# Directorios de salida de compilación
+/bin/
+/out/
+/target/
+
+# Archivos de log
+*.log
+
+# Archivos de paquetes
+*.jar
+*.war
+*.ear
+
+# Archivos de configuración de IDEs populares
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
