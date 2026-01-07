@@ -1,5 +1,13 @@
+# 📊 Variables en Java
 
-# Variables en Java
+## 📋 Índice
+- [¿Qué es una Variable?](#qué-es-una-variable)
+- [Categorías de Tipos de Datos](#categorías-de-tipos-de-datos)
+- [Reglas para Definir Nombres de Variables](#reglas-para-definir-nombres-de-variables)
+
+---
+
+## Introducción
 
 Las variables son uno de los conceptos más fundamentales en Java. Representan entidades que almacenan datos o valores durante la ejecución de un programa.
 
@@ -101,3 +109,21 @@ boolean esActivo;
 ```
 
 Seguir estas reglas y convenciones ayuda a escribir código Java claro, legible y que cumple con los estándares del lenguaje.
+
+---
+
+## 📚 Archivos del Módulo
+
+| Archivo | Descripción |
+|---------|-------------|
+| [Variables.java](./Variables.java) | Declaración e inicialización de variables |
+| [Primitivos_Enteros.java](./Primitivos_Enteros.java) | Tipos byte, short, int, long |
+| [Primitivos_Decimales.java](./Primitivos_Decimales.java) | Tipos float y double |
+| [PrimitivosCaracter.java](./PrimitivosCaracter.java) | Tipo char y Unicode |
+| [PrimitivosBooleanos.java](./PrimitivosBooleanos.java) | Tipo boolean |
+| [ConversionDeTipos.java](./ConversionDeTipos.java) | Casting entre tipos |
+| [SistemasNumericos.java](./SistemasNumericos.java) | Binario, octal, hexadecimal |
+
+---
+
+> 💡 **Tip**: Sigue la convención CamelCase para nombrar variables y elige nombres descriptivos.

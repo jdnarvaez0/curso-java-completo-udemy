@@ -1,4 +1,12 @@
-# Manejo de Strings en Java
+# 🔤 Manejo de Strings en Java
+
+## 📋 Índice
+- [¿Qué son los Strings?](#qué-son-los-strings)
+- [Concatenar Strings](#concatenar-strings)
+- [Comparar Strings](#comparar-strings)
+- [Métodos de la Clase String](#métodos-de-la-clase-string)
+
+---
 
 ## ¿Qué son los Strings?
 
@@ -91,3 +99,22 @@ System.out.println("Substring (5,8): " + frase.substring(5, 8)); // Imprime: es
 System.out.println("IndexOf 'lenguaje': " + frase.indexOf("lenguaje")); // Imprime: 11
 System.out.println("Termina con 'poderoso'? " + frase.endsWith("poderoso")); // Imprime: true
 ```
+
+---
+
+## 📚 Archivos del Módulo
+
+| Archivo | Descripción |
+|---------|-------------|
+| [EjemploString.java](./EjemploString.java) | Creación básica de Strings |
+| [EjemploStringConcatenacion.java](./EjemploStringConcatenacion.java) | Concatenación con + |
+| [EjemploStringInmutable.java](./EjemploStringInmutable.java) | Inmutabilidad de Strings |
+| [EjemploStringMetodos.java](./EjemploStringMetodos.java) | Métodos principales de String |
+| [EjemploStringMetodosArreglos.java](./EjemploStringMetodosArreglos.java) | Split y arrays de Strings |
+| [EjemploStringExtensionArchivo.java](./EjemploStringExtensionArchivo.java) | Extraer extensión de archivo |
+| [EjemploStringValidar.java](./EjemploStringValidar.java) | Validación de Strings |
+| [EjemploStringRendimiento.java](./EjemploStringRendimiento.java) | String vs StringBuilder |
+
+---
+
+> 💡 **Tip**: Usa `.equals()` para comparar Strings, no `==`. Recuerda que los Strings son inmutables.

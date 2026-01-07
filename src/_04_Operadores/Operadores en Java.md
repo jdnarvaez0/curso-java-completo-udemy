@@ -1,4 +1,18 @@
-# Operadores en Java
+# ➕ Operadores en Java
+
+## 📋 Índice
+- [Introducción](#introducción)
+- [Operadores Aritméticos](#operadores-aritméticos)
+- [Operadores de Asignación](#operadores-de-asignación)
+- [Operadores de Incremento y Decremento](#operadores-de-incremento-y-decremento)
+- [Operador Ternario](#operador-ternario-condicional)
+- [Operadores Relacionales](#operadores-relacionales)
+- [Operadores Lógicos](#operadores-lógicos)
+- [Precedencia de Operadores](#precedencia-de-operadores)
+
+---
+
+## Introducción
 
 Los operadores en Java son símbolos especiales que realizan operaciones específicas sobre una, dos o tres operandos (valores, variables) y luego devuelven un resultado. Sirven para realizar cálculos matemáticos, comparar valores, formar expresiones lógicas, tomar decisiones, etc.
 
@@ -221,3 +235,27 @@ System.out.println(resultado2); // Imprime 20
 **Conclusión:**
 
 Entender los operadores es fundamental para escribir expresiones y sentencias efectivas en Java. Practica con diferentes combinaciones para familiarizarte con su comportamiento y precedencia.
+
+---
+
+## 📚 Archivos del Módulo
+
+| Archivo | Descripción |
+|---------|-------------|
+| [OperadoresAritmeticos.java](./OperadoresAritmeticos.java) | Suma, resta, multiplicación, división y módulo |
+| [OperadoresAsignacion.java](./OperadoresAsignacion.java) | Operadores combinados (+=, -=, etc.) |
+| [OperadoresIncrementales.java](./OperadoresIncrementales.java) | Pre/post incremento y decremento |
+| [OperadoresUnarios.java](./OperadoresUnarios.java) | Operadores de un solo operando |
+| [OperadoresRelaciones.java](./OperadoresRelaciones.java) | Comparaciones (<, >, ==, !=) |
+| [OperadoresLogicos.java](./OperadoresLogicos.java) | AND, OR, NOT |
+| [OperadoresLogicosLogin.java](./OperadoresLogicosLogin.java) | Ejemplo práctico de login |
+| [OperadoresLogicosLoginArrays.java](./OperadoresLogicosLoginArrays.java) | Login con arrays |
+| [OperadoresLogicosLoginArraysTernario.java](./OperadoresLogicosLoginArraysTernario.java) | Login con ternario |
+| [OperadorTernario.java](./OperadorTernario.java) | Operador condicional ?: |
+| [OperadorTernarioNumeroMayor.java](./OperadorTernarioNumeroMayor.java) | Encontrar número mayor |
+| [OperadorInstanceOf.java](./OperadorInstanceOf.java) | Verificar tipo de objeto |
+| [OperadorInstanceOfGenericos.java](./OperadorInstanceOfGenericos.java) | instanceof con genéricos |
+
+---
+
+> 💡 **Tip**: Usa paréntesis para hacer tu código más legible y evitar confusiones con la precedencia de operadores.

@@ -1,4 +1,4 @@
-package _06_ClaseWrapper;
+package _07_Valor_vs_referencia;
 
 public class PasarPorValor {
     public static void main(String[] args) {
