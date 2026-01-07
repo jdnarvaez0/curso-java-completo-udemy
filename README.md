@@ -1,18 +1,24 @@
-## Getting Started
+# ☕ Master Completo Java de Cero a Experto
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Udemy](https://img.shields.io/badge/Udemy-A435F0?style=for-the-badge&logo=Udemy&logoColor=white)
+![Status](https://img.shields.io/badge/Status-En%20Progreso-green?style=for-the-badge)
 
-## Folder Structure
+> 📚 Repositorio de seguimiento del curso **"Máster Completo Java de cero a experto Actualizado (+157hrs)"** de Udemy.
 
-The workspace contains two folders by default, where:
+Este repositorio contiene ejemplos de código, notas y ejercicios prácticos realizados durante el curso. Está organizado por temas para facilitar la consulta y revisión del contenido.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+---
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## 📋 Tabla de Contenido
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+| # | Tema | Descripción |
+|:-:|:-----|:------------|
+| 1 | [Hola Mundo](src/HolaMundo.java) | Primer programa en Java |
+| 2 | [Variables y Tipos de Datos](src/_02_Variables/) | Primitivos, referencias y conversión de tipos |
+| 3 | [Strings](src/_03_Strings/) | Manejo de cadenas de texto y métodos |
+| 4 | [Operadores](src/_04_Operadores/) | Aritméticos, lógicos, relacionales y más |
+| 5 | [Flujos de Control](src/_05_FlujosDeControl/) | If-else, switch, bucles for, while |
+| 6 | [Clases Wrapper](src/_06_ClaseWrapper/) | Autoboxing, unboxing y paso por valor/referencia |
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+---
