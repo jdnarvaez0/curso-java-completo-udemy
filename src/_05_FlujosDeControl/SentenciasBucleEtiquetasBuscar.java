@@ -8,7 +8,6 @@ public class SentenciasBucleEtiquetasBuscar {
         int maxPalabra = palabra.length();
         int maxFrase = frase.length() - maxPalabra;
         int cantidad = 0;
-        char letra = 't';
 
         buscar: for (int i = 0; i <= maxFrase; i++) {
             int k = i;

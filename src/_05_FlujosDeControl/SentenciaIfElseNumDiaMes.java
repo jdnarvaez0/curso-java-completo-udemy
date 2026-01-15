@@ -27,5 +27,6 @@ public class SentenciaIfElseNumDiaMes {
         }
 
         System.out.println("numeroDias " + numeroDias);
+        sc.close();
     }
 }
