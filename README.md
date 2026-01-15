@@ -20,5 +20,7 @@ Este repositorio contiene ejemplos de código, notas y ejercicios prácticos rea
 | 4 | [Operadores](src/_04_Operadores/) | Aritméticos, lógicos, relacionales y más |
 | 5 | [Flujos de Control](src/_05_FlujosDeControl/) | If-else, switch, bucles for, while |
 | 6 | [Clases Wrapper](src/_06_ClaseWrapper/) | Autoboxing, unboxing y paso por valor/referencia |
+| 7 | [Valor vs Referencia](src/_07_Valor_vs_referencia/) | Paso de parámetros por valor y por referencia |
+| 8 | [Clase Date y Calendar](src/_08_Clase_Date_y_Calendar/) | Manejo de fechas y calendarios en Java |
 
 ---
