@@ -22,5 +22,6 @@ Este repositorio contiene ejemplos de código, notas y ejercicios prácticos rea
 | 6 | [Clases Wrapper](src/_06_ClaseWrapper/) | Autoboxing, unboxing y paso por valor/referencia |
 | 7 | [Valor vs Referencia](src/_07_Valor_vs_referencia/) | Paso de parámetros por valor y por referencia |
 | 8 | [Clase Date y Calendar](src/_08_Clase_Date_y_Calendar/) | Manejo de fechas y calendarios en Java |
+| 9 | [La Clase System](src/_09_La_Clase_System/La_Clase_System.md) | Propiedades del sistema, variables de entorno y ejecución de procesos |
 
 ---
