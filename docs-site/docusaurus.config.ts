@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Curso Java Completo',
   tagline: 'Master Completo Java de Cero a Experto',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/java-logo.svg',
 
   future: {
     v4: true,
@@ -52,7 +52,7 @@ const config: Config = {
       title: 'Curso Java',
       logo: {
         alt: 'Java Logo',
-        src: 'img/logo.svg',
+        src: 'img/java-logo.svg',
       },
       items: [
         {
