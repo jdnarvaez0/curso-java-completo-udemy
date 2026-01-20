@@ -222,55 +222,115 @@ body {
   color: var(--ifm-color-emphasis-600);
 }
 
-/* ===== Code Blocks ===== */
+/* ===== Code Blocks - Mac Terminal Style ===== */
 .prism-code {
   font-size: 1.0rem !important;
-  line-height: 1.65 !important;
-  border-radius: var(--ifm-global-radius);
+  line-height: 1.7 !important;
+  border-radius: 0 0 10px 10px;
 }
 
 div[class*='codeBlockContainer'] {
-  border-radius: 12px;
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: var(--custom-shadow-md);
-  border: 1px solid var(--ifm-toc-border-color);
-  margin: 1.25rem 0;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border: none;
+  margin: 1.5rem 0;
+  position: relative;
 }
 
+[data-theme='dark'] div[class*='codeBlockContainer'] {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* Mac Terminal Header with Traffic Lights */
 div[class*='codeBlockTitle'] {
-  background: #21252b !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 0.6rem 1rem;
+  background: #1e2028 !important;
+  border-bottom: none;
+  padding: 0.75rem 1rem 0.75rem 4.5rem;
   font-weight: 500;
   font-size: 0.8rem;
   font-family: var(--ifm-font-family-monospace);
-  color: #9ca3af;
+  color: #8b8f9a;
+  text-align: center;
+  position: relative;
 }
 
+/* Traffic light buttons */
+div[class*='codeBlockTitle']::before {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background: #ff5f56;
+  border-radius: 50%;
+  box-shadow:
+    20px 0 0 #ffbd2e,
+    40px 0 0 #27c93f;
+}
+
+/* Code content background */
 div[class*='codeBlockContent'] {
-  background: #1e1e2e !important;
-  padding: 0.25rem 0;
+  background: #1a1d27 !important;
+  padding: 0.5rem 0;
+}
+
+/* For blocks without title - add traffic lights */
+div[class*='codeBlockContainer']:not(:has(div[class*='codeBlockTitle'])) div[class*='codeBlockContent'] {
+  padding-top: 2.5rem;
+  position: relative;
+}
+
+div[class*='codeBlockContainer']:not(:has(div[class*='codeBlockTitle'])) div[class*='codeBlockContent']::before {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  top: 0.85rem;
+  width: 12px;
+  height: 12px;
+  background: #ff5f56;
+  border-radius: 50%;
+  box-shadow:
+    20px 0 0 #ffbd2e,
+    40px 0 0 #27c93f;
 }
 
 /* Code block line styling */
 div[class*='codeBlockLines'] {
   font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, monospace !important;
-  font-size: 0.95rem !important;
+  font-size: 1.0rem !important;
 }
 
-/* Token/Syntax Highlighting - Catppuccin Mocha inspired */
+/* Copy button styling for terminal */
+button[class*='copyButton'] {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  font-size: 0.7rem;
+  padding: 0.3rem 0.5rem;
+  color: #6b7280;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+button[class*='copyButton']:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #e5e7eb;
+}
+
+/* Token/Syntax Highlighting - Vivid colors for dark background */
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #6c7086 !important;
+  color: #7f8c9a !important;
   font-style: italic;
 }
 
 .token.keyword {
-  color: #cba6f7 !important;
-  /* Purple for keywords */
-  font-weight: 500;
+  color: #ff79c6 !important;
+  /* Bright pink for keywords */
+  font-weight: 600;
 }
 
 .token.property,
@@ -278,14 +338,15 @@ div[class*='codeBlockLines'] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-  color: #f38ba8 !important;
-  /* Pink */
+  color: #ff6b6b !important;
+  /* Bright red */
 }
 
 .token.boolean,
 .token.number {
-  color: #fab387 !important;
-  /* Peach */
+  color: #bd93f9 !important;
+  /* Purple for numbers */
+  font-weight: 500;
 }
 
 .token.selector,
@@ -294,8 +355,8 @@ div[class*='codeBlockLines'] {
 .token.char,
 .token.builtin,
 .token.inserted {
-  color: #a6e3a1 !important;
-  /* Green for strings */
+  color: #50fa7b !important;
+  /* Bright green for strings */
 }
 
 .token.operator,
@@ -303,30 +364,35 @@ div[class*='codeBlockLines'] {
 .token.url,
 .language-css .token.string,
 .style .token.string {
-  color: #89dceb !important;
-  /* Cyan */
+  color: #8be9fd !important;
+  /* Bright cyan */
 }
 
 .token.atrule,
 .token.attr-value,
 .token.function {
-  color: #89b4fa !important;
-  /* Blue for functions */
-}
-
-.token.class-name {
-  color: #f9e2af !important;
-  /* Yellow for class names */
+  color: #69b7ff !important;
+  /* Bright blue for functions */
   font-weight: 500;
 }
 
+.token.class-name {
+  color: #f1fa8c !important;
+  /* Bright yellow for class names */
+  font-weight: 600;
+}
+
 .token.punctuation {
-  color: #cdd6f4 !important;
-  /* Light gray */
+  color: #f8f8f2 !important;
 }
 
 .token.variable {
-  color: #cdd6f4 !important;
+  color: #f8f8f2 !important;
+}
+
+/* Plain text in code */
+.prism-code .token-line {
+  color: #f8f8f2;
 }
 
 /* Line numbers styling */

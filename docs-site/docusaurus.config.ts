@@ -105,7 +105,7 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} Curso Java Completo. Construido con Docusaurus.`,
     },
     prism: {
-      theme: prismThemes.github,
+      theme: prismThemes.dracula,
       darkTheme: prismThemes.dracula,
       additionalLanguages: ['java'],
     },
